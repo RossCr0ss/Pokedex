@@ -56,7 +56,12 @@ body {
 
 .container {
     padding: 10px;
-    margin: 0 auto;
+    margin: 0 auto; 
+}
+
+.container-main {
+    display: flex;
+    flex-direction: row;
 }
 
 #pokedex {
@@ -73,3 +78,33 @@ h1 {
     text-align: center;
     font-size: 50px;
 }
+
+.container-info {
+    /* margin-top: 10vh; */
+    min-width: 40vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image-l {
+    border: 1px solid black;
+    height: 200px;
+}
+
+.info-attr {
+    width: 100%;
+    margin: 5% auto;
+    
+
+}
+
+.table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+
