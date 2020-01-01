@@ -7,7 +7,7 @@ body {
 
 .card {
     list-style: none;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
     background-color: papayawhip;
     color: rgb(46, 36, 32);
@@ -51,7 +51,10 @@ body {
 }
 
 .card-image {
-    height: 125px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: rgb(253, 253, 253);
+    margin-top: 5px;
 }
 
 .container-list {
@@ -123,4 +126,78 @@ h1 {
     border: 0;
 }
 
+.card-type {
+    padding: 5px;
+    border-radius: 5px;
+}
+.poison {
+    background-color: rgb(100, 71, 100);
+}
 
+.grass {
+    background-color: rgb(77, 116, 89);
+}
+
+.fire {
+    background-color: rgb(197, 152, 93);
+}
+
+.water{
+    background-color: rgb(77, 95, 116);
+}
+
+.flying {
+    background-color: rgb(127, 114, 245);
+}
+
+.bug {
+    background-color: rgb(153, 214, 137);
+}
+
+.electric {
+    background-color: rgb(229, 240, 73);
+}
+
+.normal {
+    background-color: rgba(178, 199, 184, 0.726);
+}
+
+.ice {
+    background-color: rgb(147, 216, 248);
+}
+
+.fighting {
+    background-color: rgb(116, 73, 33);
+}
+
+.ground {
+    background-color: rgb(172, 148, 82);
+}
+
+.psychic {
+    background-color: rgb(216, 111, 160);
+}
+
+.rock {
+    background-color: rgb(163, 155, 119);
+}
+
+.ghost {
+    background-color: rgb(94, 76, 143);
+}
+
+.dragon {
+    background-color: rgb(91, 53, 117);
+}
+
+.dark {
+    background-color: rgba(151, 112, 85, 0.671);
+}
+
+.steel {
+    background-color: rgba(141, 141, 141, 0.623);
+}
+
+.fairy {
+    background-color: rgba(253, 182, 240, 0.815);
+}
