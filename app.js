@@ -1,9 +1,10 @@
 const pokedex = document.getElementById("pokedex");
 const containerInfo = document.getElementById("container-info")
+let pageItems=12;
 
 const fetchPokemon = () => {
     const promises = [];
-    for (let i = 1; i <= 16; i++) {
+    for (let i = 1; i <= pageItems; i++) {
         const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
         promises.push(fetch(url).then((res) => res.json()));
     }
@@ -101,6 +102,12 @@ const displayinfo = (pokeman) => {
     
     containerInfo.innerHTML = HTMLString;
     
+}
+
+function loadMore() {
+    console.log('page')
+    pageItems += 12;
+    fetchPokemon();
 }
 
 fetchPokemon();
