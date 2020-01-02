@@ -88,13 +88,20 @@ h1 {
     font-size: 50px;
 }
 
-.container-info {
-    /* margin-top: 10vh; */
-    min-width: 40vw;
-    height: 80vh;
+#container-info {
+    margin-top: 2vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.container-info {
+    position: fixed;
+    min-width: 30vw;
+
 }
 
 .card-image-l {
@@ -201,3 +208,31 @@ h1 {
 .fairy {
     background-color: rgba(253, 182, 240, 0.815);
 }
+
+@media screen and (min-width: 320px ) and (max-width: 539px) {
+    .container-main {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .container-info {
+        position: relative;
+    }
+  }
+
+  @media screen and (min-width: 540px ) and (max-width: 768px) {
+      .container-list {
+          width: 60vw;
+      }
+
+      .container-info {
+          margin-top: 1vh;
+
+      }
+  }
+
+  @media screen and (min-width: 769px ) and (max-width: 860px) {
+    .container-list {
+        width: 80vw;
+    }
+  }
